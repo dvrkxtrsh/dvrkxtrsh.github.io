@@ -2,8 +2,8 @@
 <html lang="de">
   <style>
     body {
-      background-color: black;
-      color: white;
+      background-color: #008080;
+      color: black;
       font-family: W95FA;
     }
     #warning {
@@ -11,7 +11,27 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 35vw;
+    }
+    .windowsWindow {
+      background-color: #c0c7c8;
+      border: solid;
+      border-bottom-color: black;
+      border-right-color: black;
+      border-left-color: #c0c7c8;
+      border-top-color: #c0c7c8;
+      border-width: 2px;
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    .windowsOutline {
+      margin-left: calc(10vw+2px);
+      margin-right: calc(10vw+2px);
+      border: solid;
+      border-top-color: white;
+      border-left-color: white;
+      border-bottom-color: #87888f;
+      border-right-color: #87888f;
+      border-width: 2px;
     }
     @font-face {
       font-family: W95FA;
@@ -26,9 +46,11 @@
   </head>
 
   <body>
-    <header>
-      <img src="/images/warning.gif" id="warning">
-      <h1 style="text-align: center;">geh gras anfassen.</h1>
-    </header>
+    <div class="windowsWindow">
+      <div class="windowsOutline">
+        <img src="/images/warning.gif" id="warning">
+        <h1 style="text-align: center;">geh gras anfassen.</h1>
+      </div>
+    </div>
   </body>
 </html>
