@@ -25,7 +25,7 @@
       border-right-color: black;
       border-left-color: #c0c7c8;
       border-top-color: #c0c7c8;
-      border-width: 1%;
+      border-width: 2px;
       width: 80vw;
       aspect-ratio: 4 / 3;
       margin-left: auto;
@@ -38,7 +38,7 @@
       border-left-color: white;
       border-bottom-color: #87888f;
       border-right-color: #87888f;
-      border-width: 1%;
+      border-width: 2px;
       width: calc(80vw-4px);
       aspect-ratio: 4 / 3
     }
@@ -50,8 +50,12 @@
     }
     .blueBar {
       position: relative;
+      margin-left: 2px;
+      margin-right: 2px;
+      margin-top: 2px;
       background-color: #0000a8;
-      width: calc(80vw-8px)
+      width: auto;
+      height: 10%;
     }
     @font-face {
       font-family: W95FA;
@@ -68,8 +72,8 @@
   <body>
     <div class="windowsWindow">
       <div class="windowsOutline">
+        <div class="blueBar"></div>
         <div class="warning">
-          <div class="blueBar"></div>
           <img src="/images/warning.gif" id="warningSign">
           <h1 style="text-align: center;">geh gras anfassen.</h1>
         </div>
