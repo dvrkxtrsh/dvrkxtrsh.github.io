@@ -88,7 +88,6 @@ main {
   flex-grow: 2;
   height: auto;
   align-items: center;
-  background-color: red;
 }
 #warningSign {
   float: left;
