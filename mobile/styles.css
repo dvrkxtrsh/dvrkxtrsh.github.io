@@ -64,7 +64,13 @@ main {
     drop-shadow(0vw 0.5vw 0 black);
 }
 .button:active {
-  filter: drop-shadow(0.5vw 0vw 0 white) drop-shadow(0vw 0.5vw 0 white);
+  filter:
+    drop-shadow(-0.5vw 0vw 0 #87888f)
+    drop-shadow(0vw -0.5vw 0 #87888f)
+    drop-shadow(-0.5vw 0vw 0 black)
+    drop-shadow(0vw -0.5vw 0 black)
+    drop-shadow(0.5vw 0vw 0 white)
+    drop-shadow(0vw 0.5vw 0 white);
 }
 .close-button {
   width: auto;
@@ -73,12 +79,18 @@ main {
   margin: 1.5vw 2vw 1vw 1vw;
   padding: 0px 0px 0px 0px;
 }
+.close-button:active {
+  margin: 2vw 1.5vw 1vw 1vw;
+}
 .warning {
-
+  display: flex;
+  align-items: center;
+  height: auto;
+  background-color: red;
 }
 #warningSign {
   float: left;
-  width: auto;
+  width: 50%;
   position: relative;
   display: block;
   top: 50%;
