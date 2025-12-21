@@ -12,7 +12,9 @@ body {
 * {
   box-sizing: border-box;
 }
-.windowsWindow {
+main {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: 50vh;
   transform: translate(0,-50%);
@@ -21,7 +23,8 @@ body {
   aspect-ratio: 4 / 3;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 900px;
+  padding: 1vw;
   filter: 
     drop-shadow(-0.5vw 0vw 0 white)
     drop-shadow(0vw -0.5vw 0 white)
@@ -32,27 +35,24 @@ body {
     drop-shadow(0.5vw 0vw 0 black)
     drop-shadow(0vw 0.5vw 0 black);
 }
-.blueBar {
+.title-bar {
   position: relative;
-  top: 1vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
   background-color: #0000a8;
   width: auto;
   height: 9vw;
   display: flex;
   justify-content: space-between;
-  align-items: right;
 }
-.blueBar > h1 {
+.title-bar > h1 {
   position: relative;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0,-48%);
   color: white;
-  margin: 0 auto auto 2vw;
-  font-size: 100%;
+  margin: 0 auto auto 1.5vw;
+  font-size: 6vw;
 }
 .button {
+  border: none;
   background-color: #c0c7c8;
   display: inline-block;
   filter: 
@@ -64,11 +64,9 @@ body {
     drop-shadow(0vw 0.5vw 0 black);
 }
 .button:active {
-  border-left-color: black;
-  border-top-color: black;
   filter: drop-shadow(0.5vw 0vw 0 white) drop-shadow(0vw 0.5vw 0 white);
 }
-.closeBtn {
+.close-button {
   width: auto;
   height: 5.5vw;
   aspect-ratio: 12 / 11;
@@ -76,16 +74,15 @@ body {
   padding: 0px 0px 0px 0px;
 }
 .warning {
-  position: relative;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+
 }
 #warningSign {
-  width: 30%;
+  float: left;
+  width: auto;
+  position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 @font-face {
   font-family: W95FA;
