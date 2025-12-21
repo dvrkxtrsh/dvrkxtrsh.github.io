@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  background-image: url(/images/windows-wallpaper.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  font-family: W95FA;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.windowsWindow {
+  position: relative;
+  top: 50vh;
+  transform: translate(0,-50%);
+  background-color: #c0c7c8;
+  border: solid;
+  border-bottom-color: black;
+  border-right-color: black;
+  border-left-color: #c0c7c8;
+  border-top-color: #c0c7c8;
+  border-width: 0.5vw;
+  width: 80vw;
+  aspect-ratio: 4 / 3;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+.windowsOutline {
+  position: relative;
+  border: solid;
+  border-top-color: white;
+  border-left-color: white;
+  border-bottom-color: #87888f;
+  border-right-color: #87888f;
+  border-width: 0.5vw;
+  width: calc(80vw-1vw);
+  aspect-ratio: 4 / 3
+}
+.blueBar {
+  position: relative;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  background-color: #0000a8;
+  width: auto;
+  height: 9vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+.blueBar > h1 {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+  color: white;
+  margin: 0 auto auto 2vw;
+  font-size: 100%;
+}
+.button {
+  background-color: #c0c7c8;
+  display: inline-block;
+  border: solid;
+  border-left-color: white;
+  border-top-color: white;
+  border-right-color: #87888f;
+  border-bottom-color: #87888f;
+  border-width: 0;
+  filter: 
+    drop-shadow(0.5vw 0vw 0 #87888f)
+    drop-shadow(0vw 0.5vw 0 #87888f)
+    drop-shadow(-0.5vw 0vw 0 white)
+    drop-shadow(0vw -0.5vw 0 white)
+    drop-shadow(0.5vw 0vw 0 black)
+    drop-shadow(0vw 0.5vw 0 black);
+}
+.button:active {
+  border-left-color: black;
+  border-top-color: black;
+  filter: drop-shadow(0.5vw 0vw 0 white) drop-shadow(0vw 0.5vw 0 white);
+}
+.closeBtn {
+  width: auto;
+  height: 5.5vw;
+  aspect-ratio: 12 / 11;
+  margin: 1.5vw 2vw 1vw 1vw;
+  padding: 0px 0px 0px 0px;
+}
+.warning {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#warningSign {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@font-face {
+  font-family: W95FA;
+  src: url(/fonts/w95fa.woff2);
+}

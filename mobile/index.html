@@ -1,124 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-  <style>
-    body {
-      background-color: black;
-      background-image: url(/images/windows-wallpaper.webp);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      color: black;
-      font-family: W95FA;
-      margin: 0;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    #warningSign {
-      width: 30%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .windowsWindow {
-      position: relative;
-      top: 50vh;
-      transform: translate(0,-50%);
-      background-color: #c0c7c8;
-      border: solid;
-      border-bottom-color: black;
-      border-right-color: black;
-      border-left-color: #c0c7c8;
-      border-top-color: #c0c7c8;
-      border-width: 0.5vw;
-      width: 80vw;
-      aspect-ratio: 4 / 3;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 600px;
-    }
-    .windowsOutline {
-      position: relative;
-      border: solid;
-      border-top-color: white;
-      border-left-color: white;
-      border-bottom-color: #87888f;
-      border-right-color: #87888f;
-      border-width: 0.5vw;
-      width: calc(80vw-1vw);
-      aspect-ratio: 4 / 3
-    }
-    .warning {
-      position: relative;
-      top: 45%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    .blueBar {
-      position: relative;
-      margin-left: 1vw;
-      margin-right: 1vw;
-      margin-top: 1vw;
-      background-color: #0000a8;
-      width: auto;
-      height: 9vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: right;
-    }
-    #error {
-      position: relative;
-      top: 50%;
-      transform: translate(0,-50%);
-      color: white;
-      margin: 0 auto auto 2vw;
-      font-size: 6vw;
-    }
-    .button {
-      background-color: #c0c7c8;
-      display: inline-block;
-      border: solid;
-      border-left-color: white;
-      border-top-color: white;
-      border-right-color: #87888f;
-      border-bottom-color: #87888f;
-      border-width: 0.5vw;
-      filter: drop-shadow(0.5vw 0vw 0 black) drop-shadow(0vw 0.5vw 0 black);
-    }
-    .closeBtn {
-      width: auto;
-      height: 6.5vw;
-      aspect-ratio: 12 / 11;
-      margin: 1vw 1.5vw 1vw 1vw;
-      padding: 0px 0px 0px 0px;
-    }
-    @font-face {
-      font-family: W95FA;
-      src: url(/fonts/w95fa.woff2);
-    }
-  </style>
+<head>
+  <title>the abyss.</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
 
-  <head>
-    <title>the abyss.</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  </head>
-
-  <body>
-    <div class="windowsWindow">
-      <div class="windowsOutline">
-        <div class="blueBar">
-          <h1 id="error">error 404</h1>
-          <button class="button closeBtn">
-            <img src="close-button.svg" style="width: auto; height: 100%;">
-          </button>
-        </div>
-        <div class="warning">
-          <img src="/images/warning.gif" id="warningSign">
-          <h1 style="text-align: center;">geh gras anfassen.</h1>
-        </div>
+<body>
+  <div class="windowsWindow">
+    <div class="windowsOutline">
+      <div class="blueBar">
+        <h1>E</h1>
+        <button class="button closeBtn">
+          <img src="close-button.svg" style="width: auto; height: 100%;">
+        </button>
+      </div>
+      <div class="warning">
+        <img src="/images/warning.gif" id="warningSign">
+        <h1 style="text-align: center;">geh gras anfassen.</h1>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,97 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
-  <style>
-    body {
-      background-color: rgb(0,0,0);
-      color: white;
-      text-align: center;
-      font-family: ToxTypewriter;
-      font-size: 14pt;
-      margin: 0px;
-      display: inline-block;
-    }
-    #titleAbyss {
-      color: white;
-      font-family: QuietBrokenVoice;
-      font-size: 60pt;
-      text-align: center;
-      margin-top: 40px;
-    }
-    #titleAbyss span {
-      display: inline-block;
-    }
-    @font-face {
-      font-family: ToxTypewriter;
-      src: url(fonts/ToxTypewriter.woff2);
-    }
-    @font-face {
-      font-family: QuietBrokenVoice;
-      src: url(fonts/QuietBrokenVoice.woff2);
-    }
-  </style>
+<head>
+  <title>the abyss.</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="mobile-redirect.js"></script>
+</head>
 
-  <head>
-    <title>the abyss.</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script type="text/javascript">
-      let device = navigator.userAgent;
-      if (/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i.test(device)) {
-        location.replace("/mobile");
-      }
-    </script>
-  </head>
-
-  <body>
-    <div class="desktop-display">
-      <img src="images/header.webp" style="width: 100%;height: auto;">
-      <h1 id="titleAbyss" title="bruder wer hovert hier"></h1>
-      <p>
-        willkommen in der hölle heheheh
-      </p>
-      <p id="deviceInfo"></p>
-      <script>
-        let text = navigator.userAgent;
-        document.getElementById("deviceInfo").innerHTML = text;
-      </script>
-
-    </div>
-
-    <div class="mobile-display">
-
-    </div>
-  </body>
-
-  <script>
-    const titleAbyss = document.getElementById("titleAbyss");
-
-    function randomTransform() {
-      const maxMove = 3;
-      const maxRotate = 3;
-      const maxScale = 0.05;
-
-      const movex = (Math.random() * 2 - 1) * maxMove;
-      const movey = (Math.random() * 2 - 1) * maxMove;
-      const rotate = (Math.random() * 2 - 1) * maxRotate;
-      const scale = (Math.random() * 2 - 1) * maxScale + 1;
-
-      return "translate(" + movex + "px, " + movey + "px) rotate(" + rotate + "deg) scale(" + scale + ")";
-    }
-
-    function animateText(text) {
-      for (let char of text) {
-        const span = document.createElement("span");
-        span.textContent = char;
-        titleAbyss.appendChild(span);
-      }
-
-      setInterval(() => {
-        const spans = titleAbyss.querySelectorAll("span");
-        spans.forEach(span => {
-          span.style.transform = randomTransform();
-      })}, 500);
-    }
-
-    animateText("the \xa0 abyss.");
-  </script>
+<body>
+  <div class="desktop-display">
+    <img src="images/header.webp" style="width: 100%;height: auto;">
+    <h1 id="titleAbyss" title="bruder wer hovert hier"></h1>
+    <p>
+      willkommen in der hölle heheheh
+    </p>
+  </div>
+  <script src="main-page.js"></script>
+</body>
 </html>

@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(0,0,0);
+  color: white;
+  text-align: center;
+  font-family: ToxTypewriter;
+  font-size: 14pt;
+  margin: 0px;
+  display: inline-block;
+}
+#titleAbyss {
+  color: white;
+  font-family: QuietBrokenVoice;
+  font-size: 60pt;
+  text-align: center;
+  margin-top: 40px;
+}
+#titleAbyss span {
+  display: inline-block;
+}
+@font-face {
+  font-family: ToxTypewriter;
+  src: url(fonts/ToxTypewriter.woff2);
+}
+@font-face {
+  font-family: QuietBrokenVoice;
+  src: url(fonts/QuietBrokenVoice.woff2);
+}
