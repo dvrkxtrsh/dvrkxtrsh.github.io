@@ -1,9 +1,9 @@
 body {
   background-color: black;
-  background-image: url(/images/windows-wallpaper.webp);
+  background-image: url(/images/lutsch.webp), url(/images/windows-wallpaper.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 30%, cover;
   background-position: center;
   color: black;
   font-family: W95FA;
@@ -93,14 +93,6 @@ main {
   float: left;
   margin: 5vw;
   width: 30%;
-}
-#lutsch {
-  width: 50vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  z-index: -10;
 }
 @font-face {
   font-family: W95FA;
