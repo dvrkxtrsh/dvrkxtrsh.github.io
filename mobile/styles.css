@@ -15,6 +15,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   position: relative;
   top: 50vh;
   transform: translate(0,-50%);
@@ -84,17 +85,15 @@ main {
 }
 .warning {
   display: flex;
-  align-items: center;
+  flex-grow: 2;
   height: auto;
+  align-items: center;
   background-color: red;
 }
 #warningSign {
   float: left;
-  width: 50%;
-  position: relative;
-  display: block;
-  top: 50%;
-  transform: translate(0,-50%);
+  margin: 5vw;
+  width: 30%;
 }
 @font-face {
   font-family: W95FA;
